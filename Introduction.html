@@ -13,7 +13,7 @@
       height: 100%;
     }
     body {
-      background-image: url(img/stebBg.png);
+      background-image: url("https://images.wallpapersden.com/image/download/moon-space-minimal_61440_7680x4320.jpg");
       background-size: cover;
       min-height: 100%;
     }
@@ -26,9 +26,10 @@
       border-radius: 50px;
       padding: 40px;
       box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+      border: 10px solid rgba(255, 255, 255, 0.034);
     }
     #infoBox{
-      height: 175px;
+      height: 200px;
       width: 700px;
       background-color: #f4f4f4;
       margin-top: 50px;
@@ -46,9 +47,9 @@
       height: 400px;
     }
     #descBox{
-      height: 375px;
+      height: 350px;
       width: 700px;
-      background-color: #f4f4f4;
+      background-image: linear-gradient(white, rgba(255, 255, 255, 0.74));
       margin-top: 40px;
       margin-bottom: 40px;
       border-radius: 50px;
@@ -59,15 +60,24 @@
     #aboutBox{
       height: 300px;
       width: 250px;
-      background-color: #f4f4f4;
+      background-image: linear-gradient(white, rgba(255, 255, 255, 0.74));
+
       margin-top: 40px;
       margin-bottom: 40px;
       margin-right: 20px;
-      border-top-color: coral;
+      border-top: 50px solid #ffb10a;
       border-radius: 10px;
       padding: 25px;
       padding-left: 20px;
       box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+    #blueDescBar{
+      width: 20px;
+      height: 200px;
+      background-color: #233C65;
+      margin-right: 10px;
+      margin-top: 15px;
+      border-radius: 50px
     }
   </style>
   <body>
@@ -76,9 +86,15 @@
       <div id="profileHeaderDP">
         <div id="profileBox"></div>
         <div id="aboutBox">
-        <h1 class="title is-5"><i class="fas fa-star"></i> Favorite</i></h1>
+        <h1 class="title is-5" style="margin-top: -63.5px;margin-bottom: 40px;color:white"><i class="fas fa-star"></i> Favorite</i></h1>
         <p class="is-subtitle-4" style="text-align:center;margin-top: -15px"><i>Applications</i><br/>
-          <img src="https://i.imgur.com/KvculCv.png" alt="Reddit" width=35 height=35></p>
+          <img src="img/reddit.png" alt="Reddit" width=35 height=35>
+          <img src="img/spotify.png" alt="Spotify" width=35 height=35>
+          <img src="img/firefox.png" alt="Firefox" width=35 height=35>
+        </p>
+        <p class="is-subtitle-4" style="text-align:center;margin-top: 10px"><i>Video Game</i><br/>
+          <img src="img/ori.png" alt="Ori" width=150>
+        </p>
         </div>
       </div>
       <div id="profileHeaderInfo">
@@ -88,22 +104,27 @@
           <a href="https://fb.me/boredcore"><span class="tag is-link">Facebook</span></a>
           <a href="https://fb.me/estibun1"><span class="tag is-primary">Gaming Page</span></a>
           <progress class="progress is-success" value="19" max="75" style="margin-top: 15px">19%</progress>
-          <h6 class="subtitle is-6 is-success" style="float:right;margin-top: -20px;">Age 19</h6>
+          <h6 class="subtitle is-6 is-success" style="float:right;margin-top: -65px;">Age 19</h6>
+          <p class="is-subtitle-6" style="margin-top: -10px;color:#818181"><i>The only way to make sense out of change is to plunge into it, <br/>move with it, 
+            and join the dance &nbsp;—Alan Watts</i></p>
         </div>
         <div id="descBox">
-          <h1 class="title is-4"> <i class="fas fa-feather-alt"></i> Description</h1>
-          <h6 id="descInfo" class="subtitle is-6" style="text-align: justify">
-            </br>
-            Hello, I’m Steven.
-            </br></br>
-            I am curious on everyone and I’m sure we’ll get along. We all carry our own story and adventure, 
-            maybe this space is not enough for you to express everything — but you can tell me everything, 
-            I don’t mind — I’ll listen!
-            </br></br>
-            We will explore and accomplish greater heights together, learning the effective design on 
-            User Interfaces, and that’ll be one step for us in the future — let’s all take this opportunity 
-            and privilege to learn!
-          </h6>
+          <h1 class="title is-4" style="color:#233C65"><i class="fas fa-feather-alt"></i> Description</h1>
+          <span style="display:flex">
+            <div id="blueDescBar"></div>
+            <h6 id="descInfo" class="subtitle is-6" style="text-align: justify">
+              </br>
+              Hello, I’m Steven.
+              </br></br>
+              I am curious on everyone and I’m sure we’ll get along. We all carry our own story and adventure, 
+              maybe this space is not enough for you to express everything — but you can tell me everything, 
+              I don’t mind — I’ll listen!
+              </br></br>
+              We will explore and accomplish greater heights together, learning the effective design on 
+              User Interfaces, and that’ll be one step for us in the future — let’s all take this opportunity 
+              and privilege to learn!
+            </h6>
+          </span>
         </div>
       </div>
     </div>
