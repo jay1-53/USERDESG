@@ -61,7 +61,6 @@
       height: 300px;
       width: 250px;
       background-image: linear-gradient(white, rgba(255, 255, 255, 0.74));
-
       margin-top: 40px;
       margin-bottom: 40px;
       margin-right: 20px;
@@ -79,34 +78,139 @@
       margin-top: 15px;
       border-radius: 50px
     }
+    #statsBox{
+      width: 300px;
+      height: 275px;
+      background-color: white;
+      margin-top: 50px;
+      margin-left: 20px;
+      border-radius: 30px;
+      padding: 10px;
+      margin-bottom: -75px;
+    }
+    #upperInfo{
+      display: flex;
+      width: 1044px;
+    }
   </style>
-  <body>
+  <body>  
   <section class="section">
+    <nav class="navbar is-fixed-top" style="vertical-align: middle; background-color: rgba(0,0,0,0.0)">
+      <div class="container">  
+        <div class="navbar-brand" style="vertical-align: middle ;">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          </a>
+          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <!-- <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="https://bulma.io/">
+              Home
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                Docs
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                  Overview
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                  Modifiers
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                  Columns
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                  Layout
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  Form
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                  Elements
+                </a>
+                <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                  Components
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>
+                      Tweet
+                    </span>
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.0/bulma-0.9.0.zip">
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </nav>
     <div class="container" style="display: flex; height: 750px;">
       <div id="profileHeaderDP">
         <div id="profileBox"></div>
         <div id="aboutBox">
-        <h1 class="title is-5" style="margin-top: -63.5px;margin-bottom: 40px;color:white"><i class="fas fa-star"></i> Favorite</i></h1>
-        <p class="is-subtitle-4" style="text-align:center;margin-top: -15px"><i>Applications</i><br/>
-          <img src="img/reddit.png" alt="Reddit" width=35 height=35>
-          <img src="img/spotify.png" alt="Spotify" width=35 height=35>
-          <img src="img/firefox.png" alt="Firefox" width=35 height=35>
-        </p>
-        <p class="is-subtitle-4" style="text-align:center;margin-top: 10px"><i>Video Game</i><br/>
-          <img src="img/ori.png" alt="Ori" width=150>
-        </p>
+          <h1 class="title is-5" style="margin-top: -63.5px;margin-bottom: 40px;color:white"><i class="fas fa-star"></i> Favorite</i></h1>
+          <p class="is-subtitle-4" style="text-align:center;margin-top: -15px"><i>Applications</i><br/>
+            <img src="img/reddit.png" alt="Reddit" width=35 height=35>
+            <img src="img/spotify.png" alt="Spotify" width=35 height=35>
+            <img src="img/firefox.png" alt="Firefox" width=35 height=35>
+          </p>
+          <p class="is-subtitle-4" style="text-align:center;margin-top: 10px"><i>Video Game</i><br/>
+            <img src="img/ori.png" alt="Ori" width=150>
+          </p>
         </div>
       </div>
       <div id="profileHeaderInfo">
-        <div id="infoBox">
-          <h1 class="title" style="margin-bottom: 10px">Steven J A. Da-Anton <i class="fas fa-user"></i></h1>
-          <a href="https://steamcommunity.com/id/boredcore"><span class="tag is-dark">Steam</span></a>
-          <a href="https://fb.me/boredcore"><span class="tag is-link">Facebook</span></a>
-          <a href="https://fb.me/estibun1"><span class="tag is-primary">Gaming Page</span></a>
-          <progress class="progress is-success" value="19" max="75" style="margin-top: 15px">19%</progress>
-          <h6 class="subtitle is-6 is-success" style="float:right;margin-top: -65px;">Age 19</h6>
-          <p class="is-subtitle-6" style="margin-top: -10px;color:#818181"><i>The only way to make sense out of change is to plunge into it, <br/>move with it, 
-            and join the dance &nbsp;—Alan Watts</i></p>
+        <div id="upperInfo">
+          <div id="infoBox">
+            <h1 class="title" style="margin-bottom: 10px">Steven J A. Da-Anton <i class="fas fa-user"></i></h1>
+            <a href="https://steamcommunity.com/id/boredcore"><span class="tag is-dark">Steam</span></a>
+            <a href="https://fb.me/boredcore"><span class="tag is-link">Facebook</span></a>
+            <a href="https://fb.me/estibun1"><span class="tag is-primary">Gaming Page</span></a>
+            <progress class="progress is-success" value="19" max="75" style="margin-top: 15px">19%</progress>
+            <h6 class="subtitle is-6" style="float:right;margin-top: -65px;">Age 19</h6>
+            <p class="is-subtitle-6" style="margin-top: -10px;color:#818181"><i>The only way to make sense out of change is to plunge into it, <br/>move with it, 
+              and join the dance &nbsp;—Alan Watts</i></p>
+          </div>
+          <div class="is-hidden-desktop-only is-hidden-widescreen-only is-hidden-touch" id="statsBox">
+            <h1 class="title is-5" style="text-align: center; margin-bottom: 0px"></i>Character Stats</h1>
+            <span>Outgoing</span>
+            <progress class="progress is-primary" style="margin-bottom: 5px;" value="87" max="100">87%</progress>
+            <span>Curiosity</span>
+            <progress class="progress is-primary" style="margin-bottom: 5px;" value="85" max="100">95%</progress>
+            <span>Friendliness</span>
+            <progress class="progress is-warning" style="margin-bottom: 5px;" value="90" max="100">90%</progress>
+            <span>Playfulness</span>
+            <progress class="progress is-warning" style="margin-bottom: 5px;" value="100" max="100">100%</progress>
+            <span>Sleep</span>
+            <progress class="progress is-danger" style="margin-bottom: 5px;" value="10" max="100">10%</progress>
+          </div>
         </div>
         <div id="descBox">
           <h1 class="title is-4" style="color:#233C65"><i class="fas fa-feather-alt"></i> Description</h1>
