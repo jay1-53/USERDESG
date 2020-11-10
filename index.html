@@ -21,7 +21,7 @@
     }
 </style>
 <body>
-    <div class="uk-section uk-section-default" style="background-color:rgba(0,0,0,0.0);
+    <div class="uk-section uk-section-default"  style="background-color:rgba(0,0,0,0.0);
     margin: 0">
         <div class="uk-container" style="background-color: #fff;
          padding-left:0;padding-right:0;">
@@ -32,10 +32,10 @@
                         <div class="uk-navbar-left nav-overlay uk-visible@m" style="margin-left: 250px">
                             <ul class="uk-navbar-nav">
                                 <li>
-                                    <a href="#" style="color:white" title="Subscribe">Home</a>
+                                    <a href="index.html" style="color:white" title="Home">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#" style="color:white" title="Sign Up">Outputs</a>
+                                    <a href="output.html" style="color:white" title="Outputs">Outputs</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,82 +65,95 @@
             <div class="uk-container" style="padding-left: 40px; padding-right: 40px">
                 <div class="uk-grid uk-margin-medium-top" data-ukgrid="">
                     <div class="uk-width-1-2@m">
-                        <h4 class="uk-heading-line uk-text-bold"><span>Hi, I'm Steven!</span></h4>
-                        <article class="uk-section uk-section-small uk-padding-remove-top">
-                            <header>
-                                <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-                                    <div>
-                                        <img src="img/me.jpg"/>
+                        <div uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 100;">
+                            <h4 class="uk-heading-line uk-text-bold"><span>Hi, I'm Steven!</span></h4>
+                        </div>
+                        <div uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300;">
+                            <article class="uk-section uk-section-small uk-padding-remove-top">
+                                <header>
+                                    <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                                        <div>
+                                            <img src="img/me.jpg"/>
+                                        </div>
+                                        <div style="text-align: justify; margin-top: auto; margin-bottom: auto;">
+                                            <p><span style="color: #2c2f3c">I am currently studying at Asia Pacific College taking the degree of 
+                                                Computer Science specializes on System Softwares. I like
+                                                exploring the field of science, art, philosophy, and social sciences.</span></p>
+                                        <p>I like being minimal and playful too!</p>
+                                        </div>
                                     </div>
-                                    <div style="text-align: justify; margin-top: auto; margin-bottom: auto;">
-                                        <p><span style="color: #2c2f3c">I am currently studying at Asia Pacific College taking the degree of 
-                                            Computer Science specializes on System Softwares. I like
-                                            exploring the field of science, art, philosophy, and social sciences.</span></p>
-                                       <p>I like being minimal and playful too!</p>
+                                <hr>
+                            </article>
+                        </div>
+                        <div uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 1100;">
+                            <h4 class="uk-heading-line uk-text-bold"><span>Things that I love</span></h4>
+                        </div>
+                        <div uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 1300;">
+                            <article class="uk-section uk-section-small uk-padding-remove-top">
+                                <header>
+                                    <div uk-slideshow="animation: push; autoplay: true">
+                                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                            <ul class="uk-slideshow-items">
+                                                <li>
+                                                    <img src="img/portal.jpg" alt="" uk-cover>
+                                                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.781), rgb(0, 0, 1));
+                                                    background-color:rgba(0,0,0,0.0)">
+                                                        <h3 class="uk-margin-remove">Portal</h3>
+                                                        <p class="uk-margin-remove">A series that was made by Valve.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="img/mushishi.jpg" alt="" uk-cover>
+                                                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.781), rgb(0, 0, 1));
+                                                    background-color:rgba(0,0,0,0.0)">
+                                                        <h3 class="uk-margin-remove">Mushishi</h3>
+                                                        <p class="uk-margin-remove">An occult anime which I think incorporates logic, philosophy,
+                                                            empathy and metaphorical dialogues.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <img src="img/ori.jpg" alt="" uk-cover>
+                                                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.781), rgb(0, 0, 1));
+                                                    background-color:rgba(0,0,0,0.0)">
+                                                        <h3 class="uk-margin-remove">Ori and the Blind Forest</h3>
+                                                        <p class="uk-margin-remove">A game series followed by the Will of the Wisps, 2.5D Platformer made 
+                                                            by Moon Studios.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                                        </div>
+                                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
                                     </div>
-                                </div>
-                            <hr>
-                        </article>
-                        <h4 class="uk-heading-line uk-text-bold"><span>Things that I love</span></h4>
-                        <article class="uk-section uk-section-small uk-padding-remove-top">
-                            <header>
-                                <div uk-slideshow="animation: push; autoplay: true">
-                                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                                        <ul class="uk-slideshow-items">
-                                            <li>
-                                                <img src="img/portal.jpg" alt="" uk-cover>
-                                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.781), rgb(0, 0, 1));
-                                                background-color:rgba(0,0,0,0.0)">
-                                                    <h3 class="uk-margin-remove">Portal</h3>
-                                                    <p class="uk-margin-remove">A series that was made by Valve.</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <img src="img/mushishi.jpg" alt="" uk-cover>
-                                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.781), rgb(0, 0, 1));
-                                                background-color:rgba(0,0,0,0.0)">
-                                                    <h3 class="uk-margin-remove">Mushishi</h3>
-                                                    <p class="uk-margin-remove">An occult anime which I think incorporates logic, philosophy,
-                                                        empathy and metaphorical dialogues.
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <img src="img/ori.jpg" alt="" uk-cover>
-                                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.781), rgb(0, 0, 1));
-                                                background-color:rgba(0,0,0,0.0)">
-                                                    <h3 class="uk-margin-remove">Ori and the Blind Forest</h3>
-                                                    <p class="uk-margin-remove">A game series followed by the Will of the Wisps, 2.5D Platformer made 
-                                                        by Moon Studios.</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-                                    </div>
-                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
-                                </div>
-                            <hr>
-                        </article>
+                                <hr>
+                            </article>
+                        </div>
                     </div>
                     <div class="uk-width-1-2@m">
-                        <h4 class="uk-heading-line uk-text-bold"><span>Background</span></h4>
-                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-pill" style="padding-left: 40px">
+                        <h4 class="uk-heading-line uk-text-bold" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 500;"><span>Background</span></h4>
+                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-pill" 
+                        uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 700;" style="padding-left: 40px">
                             <h3 class="uk-card-title">Schools</h3>
                             <p style="color:whitesmoke; margin-top: -10px">Asia Pacific College — <i>College. BS Computer Science.</i></br>
                             Asia Pacific College — <i>Senior High School. With Honors.</i></br>
                             Pitogo High School — <i>Junior High School. With Honors.</i></p>
                         </div>
                         <div class="uk-card uk-card-default uk-card-small uk-card-body uk-border-pill uk-margin-small-top" 
-                        style="padding-left: 40px;color: #151515">
+                        style="padding-left: 40px;color: #151515" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 900;">
                             <h3 class="uk-card-title">Others</h3>
                             <p style=" margin-top: -10px;">Ghostmode — <i>Manager and Co-Owner</i></br>
                             The Frontliner Today — <i>Publicity Member & Volunteer</i></br>
                             Food for Frontliners PH — <i>Publicity Leader & Volunteer</i></p>
                         </div>
-                        <h4 class="uk-heading-line uk-text-bold"><span>I'd like to express here</span></h4>
-                        <div class="uk-tile uk-tile-small uk-tile-muted uk-border-rounded">
-                            So it's kinda long here but this would be a placeholder.
+                        <div uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 1500;">
+                            <h4 class="uk-heading-line uk-text-bold"><span>I'd like to express here</span></h4>
+                        </div>
+                        <div uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 1700;">
+                            <div class="uk-tile uk-tile-small uk-tile-muted uk-border-rounded">
+                                So it's kinda long here but this would be a placeholder.
+                            </div>
                         </div>
                     </div>
                 </div>
